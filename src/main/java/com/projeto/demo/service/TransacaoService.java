@@ -68,7 +68,7 @@ public class TransacaoService {
     }
 
     private void enviarCallbackParaEmpresa(Transacao transacao) {
-        String callbackUrl = "https://webhook.site//9c551553-409a-4d36-aced-aa2c36fc502e"; // Substitua pelo URL fornecido pelo webhook.site
+        String callbackUrl = "https://webhook.site//9c551553-409a-4d36-aced-aa2c36fc502e";
 
         String dadosParaEmpresa = "Nova transação realizada: " + transacao.getId() + " - Valor: " + transacao.getValor();
         RestTemplate restTemplate = new RestTemplate();
